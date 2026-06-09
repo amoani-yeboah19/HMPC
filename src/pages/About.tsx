@@ -38,7 +38,7 @@ export default function About() {
               className="aspect-[4/5] bg-card overflow-hidden"
             >
               <img 
-                src="/images/gallery-4.png" 
+                src="/images/gallery-4.webp" 
                 alt="HMPC Team at work" 
                 className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
               />

@@ -5,18 +5,18 @@ import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 const allProducts = [
-  { id: 1, title: "Nero Marquina", category: "Floor Tiles", image: "/images/collection-1.png" },
-  { id: 2, title: "Hexagon Noir", category: "Wall Tiles", image: "/images/collection-2.png" },
-  { id: 3, title: "Slate Aggregate", category: "Outdoor Tiles", image: "/images/collection-3.png" },
-  { id: 4, title: "Brass Inlay", category: "Decorative Tiles", image: "/images/collection-4.png" },
-  { id: 5, title: "Calacatta Gold", category: "Bathroom Tiles", image: "/images/gallery-1.png" },
-  { id: 6, title: "Travertine Raw", category: "Floor Tiles", image: "/images/gallery-2.png" },
-  { id: 7, title: "Concrete Finish", category: "Wall Tiles", image: "/images/gallery-3.png" },
-  { id: 8, title: "Terrazzo Spec", category: "Floor Tiles", image: "/images/gallery-4.png" },
-  { id: 9, title: "Limestone Planks", category: "Outdoor Tiles", image: "/images/gallery-5.png" },
-  { id: 10, title: "Penny Round", category: "Bathroom Tiles", image: "/images/collection-1.png" },
-  { id: 11, title: "Chevron Oak", category: "Floor Tiles", image: "/images/collection-2.png" },
-  { id: 12, title: "Grout & Sealant", category: "Tiling Accessories", image: "/images/collection-3.png" },
+  { id: 1, title: "Nero Marquina", category: "Floor Tiles", image: "/images/collection-1.webp" },
+  { id: 2, title: "Hexagon Noir", category: "Wall Tiles", image: "/images/collection-2.webp" },
+  { id: 3, title: "Slate Aggregate", category: "Outdoor Tiles", image: "/images/collection-3.webp" },
+  { id: 4, title: "Brass Inlay", category: "Decorative Tiles", image: "/images/collection-4.webp" },
+  { id: 5, title: "Calacatta Gold", category: "Bathroom Tiles", image: "/images/gallery-1.webp" },
+  { id: 6, title: "Travertine Raw", category: "Floor Tiles", image: "/images/gallery-2.webp" },
+  { id: 7, title: "Concrete Finish", category: "Wall Tiles", image: "/images/gallery-3.webp" },
+  { id: 8, title: "Terrazzo Spec", category: "Floor Tiles", image: "/images/gallery-4.webp" },
+  { id: 9, title: "Limestone Planks", category: "Outdoor Tiles", image: "/images/gallery-5.webp" },
+  { id: 10, title: "Penny Round", category: "Bathroom Tiles", image: "/images/collection-1.webp" },
+  { id: 11, title: "Chevron Oak", category: "Floor Tiles", image: "/images/collection-2.webp" },
+  { id: 12, title: "Grout & Sealant", category: "Tiling Accessories", image: "/images/collection-3.webp" },
 ];
 
 const categories = ["All", "Floor Tiles", "Wall Tiles", "Bathroom Tiles", "Outdoor Tiles", "Decorative Tiles", "Tiling Accessories"];
