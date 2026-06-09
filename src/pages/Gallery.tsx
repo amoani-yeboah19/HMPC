@@ -2,15 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const galleryItems = [
-  { id: 1, src: "/images/gallery-1.png", title: "Luxury Bathroom", category: "Residential" },
-  { id: 2, src: "/images/gallery-2.png", title: "Grand Hotel Lobby", category: "Hospitality" },
-  { id: 3, src: "/images/gallery-3.png", title: "Modern Kitchen", category: "Residential" },
-  { id: 4, src: "/images/gallery-4.png", title: "Tech Corp HQ", category: "Commercial" },
-  { id: 5, src: "/images/gallery-5.png", title: "Oceanfront Terrace", category: "Residential" },
-  { id: 6, src: "/images/hero.png", title: "Penthouse Floors", category: "Residential" },
-  { id: 7, src: "/images/collection-1.png", title: "Retail Showroom", category: "Commercial" },
-  { id: 8, src: "/images/collection-2.png", title: "Boutique Spa", category: "Hospitality" },
-  { id: 9, src: "/images/collection-3.png", title: "Plaza Exterior", category: "Commercial" },
+  { id: 1, src: "/images/gallery-1.webp", title: "Luxury Bathroom", category: "Residential" },
+  { id: 2, src: "/images/gallery-2.webp", title: "Grand Hotel Lobby", category: "Hospitality" },
+  { id: 3, src: "/images/gallery-3.webp", title: "Modern Kitchen", category: "Residential" },
+  { id: 4, src: "/images/gallery-4.webp", title: "Tech Corp HQ", category: "Commercial" },
+  { id: 5, src: "/images/gallery-5.webp", title: "Oceanfront Terrace", category: "Residential" },
+  { id: 6, src: "/images/hero.webp", title: "Penthouse Floors", category: "Residential" },
+  { id: 7, src: "/images/collection-1.webp", title: "Retail Showroom", category: "Commercial" },
+  { id: 8, src: "/images/collection-2.webp", title: "Boutique Spa", category: "Hospitality" },
+  { id: 9, src: "/images/collection-3.webp", title: "Plaza Exterior", category: "Commercial" },
 ];
 
 const categories = ["All", "Residential", "Commercial", "Hospitality"];

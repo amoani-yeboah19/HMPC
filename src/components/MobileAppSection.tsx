@@ -18,7 +18,7 @@ export function MobileAppSection() {
               className="relative z-10 w-[300px] h-[600px]"
             >
               <img 
-                src="/images/app-mockup.png" 
+                src="/images/collection-2.webp"
                 alt="HMPC Mobile App" 
                 className="w-full h-full object-cover rounded-[3rem] border-8 border-gray-900 shadow-2xl"
               />

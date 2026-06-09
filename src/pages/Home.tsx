@@ -11,19 +11,19 @@ import { Shield, PenTool, TrendingUp, Gem, ChevronLeft, ChevronRight } from "luc
 import { Link } from "wouter";
 
 const collections = [
-  { id: 1, title: "Nero Marquina", category: "Marble Floor", image: "/images/collection-1.png" },
-  { id: 2, title: "Hexagon Noir", category: "Geometric Wall", image: "/images/collection-2.png" },
-  { id: 3, title: "Slate Aggregate", category: "Outdoor Stone", image: "/images/collection-3.png" },
-  { id: 4, title: "Brass Inlay", category: "Decorative Mosaic", image: "/images/collection-4.png" },
+  { id: 1, title: "Nero Marquina", category: "Marble Floor", image: "/images/collection-1.webp" },
+  { id: 2, title: "Hexagon Noir", category: "Geometric Wall", image: "/images/collection-2.webp" },
+  { id: 3, title: "Slate Aggregate", category: "Outdoor Stone", image: "/images/collection-3.webp" },
+  { id: 4, title: "Brass Inlay", category: "Decorative Mosaic", image: "/images/collection-4.webp" },
 ];
 
 const galleryPreview = [
-  { src: "/images/gallery-1.png", title: "Ritz Carlton Spa", category: "Hospitality" },
-  { src: "/images/gallery-2.png", title: "Madison Ave Lobby", category: "Commercial" },
-  { src: "/images/gallery-3.png", title: "Tribeca Penthouse", category: "Residential" },
-  { src: "/images/gallery-4.png", title: "Apex Tower Offices", category: "Commercial" },
-  { src: "/images/gallery-5.png", title: "Seaside Villa", category: "Residential" },
-  { src: "/images/collection-1.png", title: "Private Residence", category: "Residential" },
+  { src: "/images/gallery-1.webp", title: "Ritz Carlton Spa", category: "Hospitality" },
+  { src: "/images/gallery-2.webp", title: "Madison Ave Lobby", category: "Commercial" },
+  { src: "/images/gallery-3.webp", title: "Tribeca Penthouse", category: "Residential" },
+  { src: "/images/gallery-4.webp", title: "Apex Tower Offices", category: "Commercial" },
+  { src: "/images/gallery-5.webp", title: "Seaside Villa", category: "Residential" },
+  { src: "/images/collection-1.webp", title: "Private Residence", category: "Residential" },
 ];
 
 export default function Home() {
