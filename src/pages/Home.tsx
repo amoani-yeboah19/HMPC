@@ -149,19 +149,50 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-primary relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0yMCAwaDIwdjQwSDIweiIgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPg==')]"></div>
-        <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
-          <h2 className="text-4xl md:text-6xl font-display text-black mb-6">Ready to elevate your space?</h2>
-          <p className="text-black/80 font-medium max-w-2xl mx-auto mb-10 text-lg">
+      <section className="relative overflow-hidden bg-background py-32">
+        {/* gold radial glow */}
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-[130px]" />
+        {/* top hairline accent */}
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="container relative z-10 mx-auto px-4 text-center md:px-8"
+        >
+          <div className="mb-6 inline-flex items-center gap-2">
+            <div className="h-[2px] w-8 bg-primary" />
+            <span className="text-sm font-medium uppercase tracking-widest text-primary">Start Your Project</span>
+            <div className="h-[2px] w-8 bg-primary" />
+          </div>
+
+          <h2 className="mx-auto mb-6 max-w-3xl font-display text-4xl text-white md:text-6xl">
+            Ready to{" "}
+            <span className="bg-gradient-to-r from-amber-300 via-primary to-amber-400 bg-clip-text text-transparent">
+              elevate
+            </span>{" "}
+            your space?
+          </h2>
+
+          <p className="mx-auto mb-10 max-w-2xl text-lg font-medium text-white/60">
             Connect with our team of consultants to discuss your project requirements, material sourcing, and installation logistics.
           </p>
-          <Link href="/contact">
-            <div className="inline-flex bg-black text-white px-10 py-5 uppercase tracking-widest text-sm font-bold hover:bg-gray-900 transition-colors cursor-pointer">
-              Schedule Consultation
-            </div>
-          </Link>
-        </div>
+
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/contact">
+              <div className="inline-flex cursor-pointer bg-primary px-10 py-5 text-sm font-bold uppercase tracking-widest text-black shadow-[0_0_50px_-12px_hsl(48,100%,50%)] transition-all hover:bg-primary/90 hover:shadow-[0_0_70px_-8px_hsl(48,100%,50%)]">
+                Schedule Consultation
+              </div>
+            </Link>
+            <Link href="/products">
+              <div className="inline-flex cursor-pointer border border-white/20 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-colors hover:border-white/40 hover:bg-white/5">
+                Explore Products
+              </div>
+            </Link>
+          </div>
+        </motion.div>
       </section>
     </div>
   );
