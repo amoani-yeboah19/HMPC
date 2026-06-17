@@ -221,6 +221,64 @@
   font-family: 'Bebas Neue', cursive;
 }
 
+/* ----- Brand helpers (HMPC) ----- */
+
+/* Gold gradient text used for hero/section accent words */
+.text-gold-gradient {
+  background-image: linear-gradient(120deg, #fde68a 0%, hsl(48 100% 50%) 45%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Subtle blueprint/tile grid texture for section backgrounds */
+.bg-tile-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Slow cinematic zoom for hero background (slideshow). Two variants so
+   consecutive slides pan in different directions for a richer feel. */
+@keyframes kenburns {
+  0%   { transform: scale(1.04) translate(0, 0); }
+  100% { transform: scale(1.16) translate(-1.5%, -1.5%); }
+}
+.animate-kenburns {
+  animation: kenburns 8s ease-out forwards;
+}
+
+@keyframes kenburns-alt {
+  0%   { transform: scale(1.16) translate(1.5%, 1%); }
+  100% { transform: scale(1.04) translate(0, 0); }
+}
+.animate-kenburns-alt {
+  animation: kenburns-alt 8s ease-out forwards;
+}
+
+/* Infinite logo marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+/* Gentle bobbing scroll indicator */
+@keyframes scroll-cue {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50%      { transform: translateY(6px); opacity: 1; }
+}
+.animate-scroll-cue {
+  animation: scroll-cue 1.8s ease-in-out infinite;
+}
+
 
 /**
  * Using the elevate system.

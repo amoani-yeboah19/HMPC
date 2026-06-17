@@ -58,6 +58,11 @@ export function Navbar() {
               </div>
             </Link>
           ))}
+          <Link href="/contact">
+            <div className="ml-2 cursor-pointer bg-primary px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-black transition-all hover:shadow-[0_0_30px_-8px_hsl(48,100%,50%)]">
+              Get a Quote
+            </div>
+          </Link>
         </div>
 
         {/* Mobile Nav Toggle */}
@@ -92,6 +97,14 @@ export function Navbar() {
                   </div>
                 </Link>
               ))}
+              <Link href="/contact">
+                <div
+                  className="mt-2 cursor-pointer bg-primary px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-black"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Get a Quote
+                </div>
+              </Link>
             </div>
           </motion.div>
         )}
